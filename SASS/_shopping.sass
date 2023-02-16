@@ -1,0 +1,78 @@
+*
+    @include reset
+    font-family: $font-roboto
+
+.wrapper
+    @include flex-column
+    justify-content: center
+    width: 600px
+    margin: 0 auto
+    height: 100vh
+
+.shopping 
+    width: 100%
+    background-color: $blue
+    border-radius: 20px
+    @include mb-20
+    padding-bottom: 30px
+    &__title
+        text-align: center
+        text-transform: uppercase
+        @include mt-15
+        color: $color-white
+    &__items
+        @include flex-row
+        justify-content: space-between
+        align-items: flex-end
+        @include mt-15
+    &__item
+        @include ml-10
+    &__products-name
+        @include mb-10
+        text-align: center
+        color: $color-white
+        text-transform: uppercase
+        font-weight: bold
+    &__products-price
+        @include mb-10
+        text-align: center
+        color: $color-white
+        text-transform: uppercase
+        font-weight: bold
+
+.shoppinglist
+    padding: 1rem
+    background-color: $blue
+    border-radius: 20px
+    @include mb-20
+    &__name
+        text-align: center
+        color: $color-white
+        text-transform: uppercase
+        @include mb-10
+        font-size: 20px
+    &__items
+        @include reset-list
+        color: $color-white
+        display: flex
+        justify-content: space-between
+    &__error
+        @include mt-15
+        @include mb-10
+        color: $color-white
+        text-align: center
+        
+
+
+.price
+    background-color: $blue
+    padding: 10px
+    border-radius: 20px
+    width: 20%
+    &__icon 
+        color: $color-white
+        font-size: 25px
+        @include mr-10
+    &__sum
+        font-size: 20px
+        color: $color-white

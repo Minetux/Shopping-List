@@ -1,0 +1,28 @@
+.btn
+    width: 15%
+    height: 30px
+    border-radius: 20px
+    border: none
+    color: $blue
+    text-transform: uppercase
+    font-weight: bold
+    transition: .6s
+    cursor: pointer
+    &--primary
+        @include mr-40
+    &--primary:hover
+        background-color: $dark-blue
+        color: $color-white
+    &--secondary
+        border: none
+        font-size: 15px
+        padding: 0 15px
+        @include mr-10
+        border-radius: 20px
+        color: $blue
+        transition: .6s
+        cursor: pointer
+    &--secondary:hover
+        background-color: $dark-blue
+        color: $color-white
+
