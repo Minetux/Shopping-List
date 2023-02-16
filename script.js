@@ -5,7 +5,7 @@ let ulList = document.querySelector('.shoppinglist__items')
 let errorInfo = document.querySelector('.shoppinglist__error')
 let newProducts 
 
-
+//newProduct List
 const addNewProducts = () => {
     if(inputName.value !== '' && inputPrice.value !== '') {
         newProducts = document.createElement('li')
@@ -35,3 +35,16 @@ const createNewTools = () => {
 }
 
 btnAdd.addEventListener('click', addNewProducts)
+
+//delete products
+const checkClick = (e) => {
+    if(e.target.matches('.btn--secondary')) {
+        deleteProducts(e)
+    }
+}
+
+const deleteProducts = (e) => {
+    e.target.closest('li').remove()
+}
+ulList.addEventListener('click', checkClick)
+//Add price to Array
